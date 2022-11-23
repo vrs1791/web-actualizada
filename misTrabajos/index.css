@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "fuente";
+    src: url(../fuentes/TitilliumWeb-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: "fuente";
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    background: rgb(40,83,16);
+    background: linear-gradient(90deg, rgba(40,83,16,1) 29%, rgba(54,161,21,1) 67%, rgba(85,208,32,1) 97%);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.container-menu {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-logo-media {
+    display: none;
+}
+
+li {
+    display: inline-block;
+    margin: 0px 30px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #AAD576;
+}
+
+a:hover {
+    color: white;
+}
+
+.container-info {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .card {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+
+        .card-img-top {
+            width: 70%;
+            height: 50%;
+        }
+
+            .card-body {
+                text-align: center;
+            }
+
+                .card-title {
+                    font-size: 1.5rem;
+                }
