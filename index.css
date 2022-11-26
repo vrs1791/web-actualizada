@@ -46,6 +46,34 @@ a:hover {
     color: white;
 }
 
+@keyframes animacion-menu {
+    0% {
+        border-radius: 4rem;
+    }
+
+    50% {
+        border-radius: 0.5rem;
+        color: #AAD576;
+        background-color: grey;
+    }
+
+    100% {
+        border-radius: 4rem;
+    }
+}
+
+.a-menu:hover {
+    background-color: white;
+    color: #306414;
+    padding: 0.5rem;
+    animation-name: animacion-menu;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
 .container-info {
     display: flex;
     align-items: center;
@@ -77,7 +105,7 @@ a:hover {
 .p-mi-info {
     height: 20%;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     margin-bottom: 50px;
@@ -150,7 +178,7 @@ a:hover {
 
 .title-exp {
     height: 40%;
-    font-size: 35px;
+    font-size: 1.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,6 +418,12 @@ a {
     margin: 15px;
 }
 
+.btn-leer-mas a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .img-foto {
     width: 70%;
     height: 50%;
@@ -505,5 +539,27 @@ i {
 .p-icon-2 {
     font-size: 0.8rem;
     margin-right: 2rem;
+}
+
+.container-icons-rs {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.fa-brands {
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.container-name {
+    display: none;
+}
+
+.container-nucba {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 }

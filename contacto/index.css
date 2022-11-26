@@ -46,6 +46,34 @@ a:hover {
     color: white;
 }
 
+@keyframes animacion-menu {
+    0% {
+        border-radius: 4rem;
+    }
+
+    50% {
+        border-radius: 0.5rem;
+        color: #AAD576;
+        background-color: grey;
+    }
+
+    100% {
+        border-radius: 4rem;
+    }
+}
+
+.a-menu:hover {
+    background-color: white;
+    color: #306414;
+    padding: 0.5rem;
+    animation-name: animacion-menu;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
 .container-info {
     width: 100%;
     height: 80%;
@@ -115,13 +143,95 @@ a:hover {
     .container-img {
         width: 50%;
         height: 100%;
-        display: flex;
-        justify-content: flex-start
-        align-items: center;
     }
 
         .img-mapa {
             width: 80%;
             height: 80%;
             border-radius: 1rem;
+        }
+
+        @media (max-width: 730px) {
+
+            .container-menu {
+                width: 100%;
+                height: 15%;
+                display: flex;
+                flex-direction: column;
+                background-color: #306414;
+            }
+            
+            .img-logo {
+                display: none;
+            }
+            
+            .img-logo-media {
+                display: flex;
+                width: 40%;
+                height: 30%;
+                margin-top: 20px;
+            }
+            
+            .lista-menu {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            li {
+                margin: 0px;
+            }
+            
+            a {
+                font-size: 15px;
+                display: flex;
+            }
+
+            .container-info {
+                background-color: #306414;
+                height: 85%;
+            }
+
+                .container-img {
+                    display: none;
+                }
+
+                .container-txt {
+                    width: 100%;
+                }
+
+                    .container-form {
+                        height: 65%;
+                    }
+
+                        input, textarea, button {
+                            width: 80%;
+                        }
+
+                    .container-datos {
+                        height: 15%;
+                        text-align: center;
+                    }
+
+                        .container-datos p {
+                            font-size: 0.9rem;
+                            margin: 0;
+
+                        }
+
+                        .container-datos a {
+                            font-size: 0.9rem;
+                        }
+
+                    .container-icons {
+                        height: 15%;
+                    }
+
+                        .fa-brands {
+                            font-size: 1.3rem;
+                        }
         }
