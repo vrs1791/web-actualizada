@@ -146,12 +146,12 @@ a:hover {
     }
 
         .img-mapa {
-            width: 80%;
-            height: 80%;
+            width: 90%;
+            height: 60%;
             border-radius: 1rem;
         }
 
-        @media (max-width: 730px) {
+        @media (max-width: 790px) {
 
             .container-menu {
                 width: 100%;
